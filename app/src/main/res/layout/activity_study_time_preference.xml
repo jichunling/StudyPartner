@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/account_bg_oval"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Main Content -->
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="1">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            &lt;!&ndash; Progress Bar Section &ndash;&gt;-->
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:orientation="horizontal"-->
+    <!--                android:gravity="center"-->
+    <!--                android:layout_marginBottom="20dp">-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/textProgress"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="3/4"-->
+    <!--                    android:textSize="16sp"-->
+    <!--                    android:textColor="#333333"-->
+    <!--                    android:layout_marginEnd="10dp" />-->
+
+    <!--                <ProgressBar-->
+    <!--                    android:id="@+id/progressBar"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_weight="1"-->
+    <!--                    android:max="4"-->
+    <!--                    android:progress="3"-->
+    <!--                    android:indeterminate="false"-->
+    <!--                    android:progressDrawable="@drawable/progress_bar"-->
+    <!--                    style="@android:style/Widget.ProgressBar.Horizontal" />-->
+    <!--            </LinearLayout>-->
+
+    <!--            &lt;!&ndash; Question &ndash;&gt;-->
+    <!--            <TextView-->
+    <!--                android:id="@+id/textQuestion"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="When do you prefer to study?"-->
+    <!--                android:textSize="18sp"-->
+    <!--                android:textColor="#333333"-->
+    <!--                android:textStyle="bold"-->
+    <!--                android:layout_marginBottom="16dp"-->
+    <!--                android:layout_marginTop="40dp" />-->
+
+    <!--            &lt;!&ndash; Study Time Selection Section &ndash;&gt;-->
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="465dp"-->
+    <!--                android:orientation="vertical">-->
+
+    <!--                &lt;!&ndash; Weekday Study Time &ndash;&gt;-->
+    <!--                <TextView-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginTop="16dp"-->
+    <!--                    android:text="Weekdays"-->
+    <!--                    android:textColor="#333333"-->
+    <!--                    android:textSize="16sp" />-->
+
+    <!--                <CheckBox-->
+    <!--                    android:id="@+id/checkWeekdayMorning"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="Weekday Morning"-->
+    <!--                    android:textColor="#333333"-->
+    <!--                    android:textSize="16sp" />-->
+
+    <!--                <CheckBox-->
+    <!--                    android:id="@+id/checkWeekdayAfternoon"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="Weekday Afternoon"-->
+    <!--                    android:textColor="#333333"-->
+    <!--                    android:textSize="16sp" />-->
+
+    <!--                <CheckBox-->
+    <!--                    android:id="@+id/checkWeekdayEvening"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="Weekday Evening"-->
+    <!--                    android:textColor="#333333"-->
+    <!--                    android:textSize="16sp" />-->
+
+    <!--                &lt;!&ndash; Weekend Study Time &ndash;&gt;-->
+    <!--                <TextView-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginTop="16dp"-->
+    <!--                    android:text="Weekends"-->
+    <!--                    android:textColor="#333333"-->
+    <!--                    android:textSize="16sp" />-->
+
+    <!--                <CheckBox-->
+    <!--                    android:id="@+id/checkWeekendMorning"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="Weekend Morning"-->
+    <!--                    android:textColor="#333333"-->
+    <!--                    android:textSize="16sp" />-->
+
+    <!--                <CheckBox-->
+    <!--                    android:id="@+id/checkWeekendAfternoon"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="Weekend Afternoon"-->
+    <!--                    android:textColor="#333333"-->
+    <!--                    android:textSize="16sp" />-->
+
+    <!--                <CheckBox-->
+    <!--                    android:id="@+id/checkWeekendEvening"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="Weekend Evening"-->
+    <!--                    android:textColor="#333333"-->
+    <!--                    android:textSize="16sp" />-->
+    <!--            </LinearLayout>-->
+    <!--        </LinearLayout>-->
+    <!--    </ScrollView>-->
+
+    <!--    &lt;!&ndash; Save Button &ndash;&gt;-->
+    <!--    <Button-->
+    <!--        android:id="@+id/buttonNext2"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Continue"-->
+    <!--        android:textColor="#FFFFFF"-->
+    <!--        android:backgroundTint="@color/primaryColor"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_marginBottom="8dp"-->
+    <!--        android:padding="12dp" />-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TextView
+                android:id="@+id/textProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/progress_3"
+
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="5"
+                android:progress="3"
+                android:progressDrawable="@drawable/progress_bar" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/titleQuestionConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/textQuestion"
+            app:layout_constraintTop_toBottomOf="@+id/textQuestion"
+            tools:ignore="NotSibling">
+
+
+            <TextView
+                android:id="@+id/textQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/time_title"
+                android:textColor="#333333"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/myScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/buttonNext2"
+        android:layout_below="@+id/titleQuestionConstraint"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/weekdays"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkWeekdayMorning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/weekday_morning"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkWeekdayAfternoon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/weekday_afternoon"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkWeekdayEvening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/weekday_evening"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <!-- Weekend Study Time -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/weekend"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkWeekendMorning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/weekend_morning"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkWeekendAfternoon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/weekend_afternoon"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkWeekendEvening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/weekend_evening"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonNext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="19dp"
+        android:backgroundTint="@color/primaryColor"
+        android:text="@string/button_save_preferences"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</RelativeLayout>

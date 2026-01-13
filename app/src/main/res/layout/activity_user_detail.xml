@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user name"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user email"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textUserAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user age"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/textUserGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user gender"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textUserPreferredStudyTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user preferred study time"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textUserTopicInterested"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user preferred study time"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textUserStudyDifficultyLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user study difficulty level"
+        android:textSize="16sp" />
+
+
+
+</LinearLayout>

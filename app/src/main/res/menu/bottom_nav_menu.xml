@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_matched_buddies"
+        android:icon="@drawable/buddies"
+        android:title="Matched Buddies" />
+
+    <item
+        android:id="@+id/nav_likes"
+        android:icon="@drawable/likes"
+        android:title="Likes You Get" />
+
+    <item
+        android:id="@+id/nav_genai"
+        android:icon="@drawable/genai"
+        android:title="GenAI" />
+
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@drawable/account"
+        android:title="Profile" />
+</menu>

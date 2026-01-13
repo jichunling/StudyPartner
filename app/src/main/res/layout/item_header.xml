@@ -1,0 +1,34 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="0dp"
+    android:layout_marginBottom="20dp">
+
+    <!-- Section Title with icon toggle -->
+    <TextView
+        android:id="@+id/sectionTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Section Title"
+        android:textColor="@color/black"
+        android:shadowColor="#808080"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:drawableEnd="@drawable/arrow_drop_up"
+        android:drawablePadding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Long Underline View -->
+    <View
+        android:id="@+id/longUnderline"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/primaryColor"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/sectionTitle"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

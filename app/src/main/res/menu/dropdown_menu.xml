@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/account"
+        android:title="Account"
+        android:icon="@drawable/account" />
+    <item
+        android:id="@+id/setting"
+        android:title="Settings"
+        android:icon="@drawable/setting" />
+</menu>

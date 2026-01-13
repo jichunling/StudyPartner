@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@drawable/account_bg_oval">
+
+    <!-- Main Content (ScrollView for dynamic height) -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/progress_2"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:indeterminate="false"
+                android:max="5"
+                android:progress="2"
+                android:progressDrawable="@drawable/progress_bar" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="156dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            app:layout_constraintEnd_toEndOf="@+id/textQuestion"
+            app:layout_constraintTop_toBottomOf="@+id/textQuestion"
+            tools:ignore="NotSibling">
+
+            <TextView
+                android:id="@+id/textQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/topic_title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/myScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/buttonNext"
+        android:layout_below="@+id/constraintLayout5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Progress Bar Section -->
+
+            <!-- Question -->
+
+            <!-- Topics Selection -->
+            <!--            <TextView-->
+            <!--                android:id="@+id/textQuestion"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="40dp"-->
+            <!--                android:layout_marginBottom="16dp"-->
+            <!--                android:gravity="center_horizontal"-->
+            <!--                android:text="What is your preferred topic?"-->
+            <!--                android:textColor="#333333"-->
+            <!--                android:textSize="18sp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <CheckBox
+                android:id="@+id/checkComputerScience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cs"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBiology"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bio"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkChemistry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/chem"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkMathematics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/maths"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkEngineering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/engineering"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkPhysics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/phy"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkEnglish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eng"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/history"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkPhilosophy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/philosophy"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkFrench"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/french"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_save_preferences"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/primaryColor"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:padding="24dp"-->
+<!--    android:background="@drawable/background11">-->
+
+<!--    &lt;!&ndash; Main Content (ScrollView for dynamic height) &ndash;&gt;-->
+<!--    <ScrollView-->
+<!--        android:id="@+id/myScrollView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_above="@+id/buttonNext"-->
+<!--        android:layout_marginBottom="16dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            &lt;!&ndash; Progress Bar Section &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginBottom="20dp">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textProgress"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="2/4"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="#333333"-->
+<!--                    android:layout_marginEnd="10dp" />-->
+
+<!--                <ProgressBar-->
+<!--                    android:id="@+id/progressBar"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="2"-->
+<!--                    android:max="4"-->
+<!--                    android:progress="2"-->
+<!--                    android:indeterminate="false"-->
+<!--                    android:progressDrawable="@drawable/progress_bar"-->
+<!--                    style="@android:style/Widget.ProgressBar.Horizontal" />-->
+<!--            </LinearLayout>-->
+
+<!--            &lt;!&ndash; Question &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/textQuestion"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="What is your preferred topic?"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textColor="#333333"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_marginBottom="16dp"-->
+<!--                android:layout_marginTop="40dp" />-->
+
+<!--            &lt;!&ndash; Topics Selection &ndash;&gt;-->
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkComputerScience"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Computer Science"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="#333333" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkBiology"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Biology"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="#333333" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkChemistry"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Chemistry"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="#333333" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkMathematics"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Mathematics"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="#333333" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkEngineering"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Engineering"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="#333333" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkPhysics"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Physics"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="#333333" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkEnglish"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="English"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="#333333" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkHistory"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="History"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="#333333" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkPhilosophy"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Philosophy"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="#333333" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkFrench"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="French"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="#333333" />-->
+
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+
+<!--    &lt;!&ndash; Next Button &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/buttonNext"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Continue"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:backgroundTint="@color/primaryColor"-->
+<!--        android:layout_alignParentBottom="true" />-->
+<!--</RelativeLayout>-->

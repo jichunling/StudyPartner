@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/account_bg_oval"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/progress_container"
+        android:layout_height="56dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TextView
+                android:id="@+id/textProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/progress_4"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="4"
+                android:progress="4"
+                android:progressDrawable="@drawable/progress_bar" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/difficultyLevelQuestionConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/textQuestion"
+            app:layout_constraintTop_toBottomOf="@+id/textQuestion"
+            tools:ignore="NotSibling">
+
+            <TextView
+                android:id="@+id/textQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/difficulty_question"
+                android:textColor="#333333"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/difficultyLevelQuestionConstraint"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radioGroupDifficulty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioEasy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/easy"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/radioMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/medium"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/radioHard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hard"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSaveDifficulty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="19dp"
+        android:backgroundTint="@color/primaryColor"
+        android:text="@string/button_save_preferences"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</RelativeLayout>
+
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:orientation="vertical"-->
+    <!--    android:padding="24dp"-->
+    <!--    android:background="@drawable/background11">-->
+
+    <!--    &lt;!&ndash; Main Content &ndash;&gt;-->
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="1">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            &lt;!&ndash; Progress Bar Section &ndash;&gt;-->
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:orientation="horizontal"-->
+    <!--                android:gravity="center"-->
+    <!--                android:layout_marginBottom="20dp">-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/textProgress"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="4/4"-->
+    <!--                    android:textSize="16sp"-->
+    <!--                    android:textColor="#333333"-->
+    <!--                    android:layout_marginEnd="10dp" />-->
+
+    <!--                <ProgressBar-->
+    <!--                    android:id="@+id/progressBar"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_weight="1"-->
+    <!--                    android:max="4"-->
+    <!--                    android:progress="4"-->
+    <!--                    android:indeterminate="false"-->
+    <!--                    android:progressDrawable="@drawable/progress_bar"-->
+    <!--                    style="@android:style/Widget.ProgressBar.Horizontal" />-->
+    <!--            </LinearLayout>-->
+
+    <!--            &lt;!&ndash; Question &ndash;&gt;-->
+    <!--            <TextView-->
+    <!--                android:id="@+id/textQuestion"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="What is your preferred difficulty level?"-->
+    <!--                android:textSize="18sp"-->
+    <!--                android:textColor="#333333"-->
+    <!--                android:textStyle="bold"-->
+    <!--                android:layout_marginBottom="16dp"-->
+    <!--                android:layout_marginTop="40dp" />-->
+
+    <!--            &lt;!&ndash; Difficulty Selection &ndash;&gt;-->
+    <!--            <RadioGroup-->
+    <!--                android:id="@+id/radioGroupDifficulty"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:orientation="vertical"-->
+    <!--                android:layout_marginBottom="30dp">-->
+
+    <!--                <RadioButton-->
+    <!--                    android:id="@+id/radioEasy"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="Easy"-->
+    <!--                    android:textSize="16sp"-->
+    <!--                    android:textColor="#333333" />-->
+
+    <!--                <RadioButton-->
+    <!--                    android:id="@+id/radioMedium"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="Medium"-->
+    <!--                    android:textSize="16sp"-->
+    <!--                    android:textColor="#333333" />-->
+
+    <!--                <RadioButton-->
+    <!--                    android:id="@+id/radioHard"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="Hard"-->
+    <!--                    android:textSize="16sp"-->
+    <!--                    android:textColor="#333333" />-->
+    <!--            </RadioGroup>-->
+    <!--        </LinearLayout>-->
+    <!--    </ScrollView>-->
+
+    <!--    &lt;!&ndash; Save Button &ndash;&gt;-->
+    <!--    <Button-->
+    <!--        android:id="@+id/btnSaveDifficulty"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Continue"-->
+    <!--        android:textColor="#FFFFFF"-->
+    <!--        android:backgroundTint="@color/primaryColor"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_marginBottom="8dp"-->
+    <!--        android:padding="12dp" />-->
+    <!--</LinearLayout>-->
