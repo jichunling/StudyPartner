@@ -12,10 +12,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.StudyBuddy"
+        android:theme="@style/Theme.studyPartner"
         tools:targetApi="31">
         <activity
-            android:name=".EditSocialAccounts"
+            android:name=".activities.EditSocialAccounts"
             android:exported="false" />
         <activity
             android:name=".activities.InputSocials"
@@ -34,9 +34,6 @@
             android:exported="false" />
         <activity
             android:name=".activities.EditPersonalInformation"
-            android:exported="false" />
-        <activity
-            android:name=".activities.MyProfile"
             android:exported="false" />
         <activity
             android:name=".activities.EditMyTopicPreferences"
@@ -81,21 +78,7 @@
         <activity
             android:name=".activities.MatchUserActivity"
             android:exported="true"
-            android:label="home" /> <!-- <activity -->
-        <!-- android:name=".activities.GenAIActivity" -->
-        <!-- android:exported="true" -->
-        <!-- android:label="genai" /> -->
-        <!-- <activity -->
-        <!-- android:name=".activities.AccountFragment" -->
-        <!-- android:exported="true" -->
-        <!-- android:label="account" /> -->
-        <activity
-            android:name=".activities.SettingActivity"
-            android:exported="true"
-            android:label="genai" /> <!-- <activity -->
-        <!-- android:name=".activities.LikesActivity" -->
-        <!-- android:exported="true" -->
-        <!-- android:label="genai" /> -->
+            android:label="home" />
         <activity
             android:name=".activities.MainActivity"
             android:exported="true"

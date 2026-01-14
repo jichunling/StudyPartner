@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".activities.GenAiFragment"
     android:background="@drawable/account_bg"
-
     android:padding="16dp">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -19,13 +18,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/welcome_text"
-        android:text="Welcome to StudyBuddy!"
+        android:text="Welcome to studyPartner!"
         android:textColor="@color/primaryColor"
         android:textStyle="bold"
         android:gravity="center"
         android:layout_centerInParent="true"
-        android:textSize="20dp"
-        />
+        android:textSize="20sp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -42,9 +40,7 @@
             android:hint="Write here"
             android:padding="16dp"
             android:background="@drawable/rounded_corner"
-            android:layout_toLeftOf="@+id/send_button"
-
-            />
+            android:layout_toLeftOf="@+id/send_button" />
 
         <ImageButton
             android:layout_width="48dp"
@@ -60,4 +56,3 @@
             android:contentDescription="" />
     </RelativeLayout>
 </RelativeLayout>
-
