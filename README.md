@@ -1,4 +1,4 @@
-# studyPartner
+# StudyPartner
 
 **A Smart Social Learning Platform Connecting Students Through Shared Academic Goals**
 
