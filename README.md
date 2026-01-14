@@ -98,13 +98,14 @@
 ```
 studyPartner/
 ├── app/src/main/java/com/example/studypartner/
-│   ├── activities/          # UI Activities and Fragments
+│   ├── activities/          # UI Activities 
 │   ├── adapter/             # RecyclerView Adapters
 │   ├── data/
 │   │   ├── database/        # SQLite Database Management
 │   │   └── model/           # Data Models (User, Connections)
-│   ├── utils/               # Validation and Utilities
-│   └── OpenAIClient.java    # AI Integration
+|   ├── fragments            # Fragments
+│   └── utils/               # Validation and Utilities
+│   
 └── app/src/main/res/        # Layouts, Drawables, Values
 ```
 
@@ -123,15 +124,6 @@ studyPartner/
 ## License
 
 This project is licensed under the MIT License.
-
----
-
-## Contact
-
-- **Developer:** [Your Name]
-- **Email:** your.email@example.com
-- **LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-- **GitHub:** [github.com/yourusername](https://github.com/yourusername)
 
 ---
 
