@@ -69,7 +69,7 @@
 
 1. **Clone & Open**
    ```bash
-   git clone https://github.com/yourusername/studyPartner.git
+   git clone https://github.com/jichunling/studyPartner.git
    ```
    Open project in Android Studio
 
